@@ -93,6 +93,7 @@ describe("Transaction Feed", function () {
       cy.visit("/");
 
       cy.wait("@notifications");
+      cy.getBySel("nav-top-notifications-count").should("exist");
       cy.wait("@mockedPublicTransactions")
         .its("response.body.results")
         .then((transactions) => {
