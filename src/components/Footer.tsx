@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Typography } from "@material-ui/core";
 
-import { ReactComponent as CypressLogo } from "../svgs/cypress-logo.svg";
+import logo from "../svgs/cypress-logo.svg";
 
 export default function Footer() {
   return (
@@ -14,7 +14,7 @@ export default function Footer() {
           rel="noopener noreferrer"
           href="https://cypress.io"
         >
-          <CypressLogo
+          <img
             style={{
               marginTop: -2,
               marginLeft: 5,
@@ -22,6 +22,7 @@ export default function Footer() {
               width: "55px",
               verticalAlign: "middle",
             }}
+            src={logo}
           />
         </a>
       </Typography>

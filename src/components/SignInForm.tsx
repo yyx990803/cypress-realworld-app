@@ -17,7 +17,7 @@ import {
 import { Formik, Form, Field, FieldProps } from "formik";
 import { string, object } from "yup";
 
-import { ReactComponent as RWALogo } from "../svgs/rwa-logo.svg";
+// import { ReactComponent as RWALogo } from "../svgs/rwa-logo.svg";
 import Footer from "./Footer";
 import { SignInPayload } from "../models";
 import { AuthMachineContext, AuthMachineEvents } from "../machines/authMachine";
@@ -77,7 +77,7 @@ const SignInForm: React.FC<Props> = ({ authService }) => {
           </Alert>
         )}
         <div>
-          <RWALogo className={classes.logo} />
+          {/* <RWALogo className={classes.logo} /> */}
         </div>
         <Typography component="h1" variant="h5">
           Sign in

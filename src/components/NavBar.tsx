@@ -23,8 +23,8 @@ import { Link as RouterLink, useLocation } from "react-router-dom";
 
 import { DataContext, DataEvents } from "../machines/dataMachine";
 import TransactionNavTabs from "./TransactionNavTabs";
-import { ReactComponent as RWALogo } from "../svgs/rwa-logo.svg";
-import { ReactComponent as RWALogoIcon } from "../svgs/rwa-icon-logo.svg";
+// import { ReactComponent as RWALogo } from "../svgs/rwa-logo.svg";
+// import { ReactComponent as RWALogoIcon } from "../svgs/rwa-icon-logo.svg";
 
 const drawerWidth = 240;
 
@@ -113,11 +113,11 @@ const NavBar: React.FC<NavBarProps> = ({ drawerOpen, toggleDrawer, notifications
           data-test="app-name-logo"
         >
           <Link to="/" style={{ color: "#fff", textDecoration: "none" }} component={RouterLink}>
-            {xsBreakpoint ? (
+            {/* {xsBreakpoint ? (
               <RWALogoIcon className={classes.logo} />
             ) : (
               <RWALogo className={classes.logo} />
-            )}
+            )} */}
           </Link>
         </Typography>
         <Button

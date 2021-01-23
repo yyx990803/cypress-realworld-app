@@ -4,7 +4,7 @@ import { List } from "@material-ui/core";
 import NotificationListItem from "./NotificationListItem";
 import { NotificationResponseItem } from "../models";
 import EmptyList from "./EmptyList";
-import { ReactComponent as RemindersIllustration } from "../svgs/undraw_reminders_697p.svg";
+// import { ReactComponent as RemindersIllustration } from "../svgs/undraw_reminders_697p.svg";
 
 export interface NotificationsListProps {
   notifications: NotificationResponseItem[];
@@ -29,7 +29,7 @@ const NotificationsList: React.FC<NotificationsListProps> = ({
         </List>
       ) : (
         <EmptyList entity="Notifications">
-          <RemindersIllustration style={{ height: 200, width: 250, marginBottom: 30 }} />
+          {/* <RemindersIllustration style={{ height: 200, width: 250, marginBottom: 30 }} /> */}
         </EmptyList>
       )}
     </>

@@ -19,8 +19,8 @@ import { userOnboardingMachine } from "../machines/userOnboardingMachine";
 import BankAccountForm from "../components/BankAccountForm";
 import { DataContext, DataEvents } from "../machines/dataMachine";
 import { AuthMachineContext, AuthMachineEvents } from "../machines/authMachine";
-import { ReactComponent as NavigatorIllustration } from "../svgs/undraw_navigator_a479.svg";
-import { ReactComponent as PersonalFinance } from "../svgs/undraw_personal_finance_tqcd.svg";
+// import { ReactComponent as NavigatorIllustration } from "../svgs/undraw_navigator_a479.svg";
+// import { ReactComponent as PersonalFinance } from "../svgs/undraw_personal_finance_tqcd.svg";
 
 export interface Props {
   authService: Interpreter<AuthMachineContext, any, AuthMachineEvents, any>;
@@ -68,7 +68,7 @@ const UserOnboardingContainer: React.FC<Props> = ({ authService, bankAccountsSer
         <Box display="flex" alignItems="center" justifyContent="center">
           {userOnboardingState.matches("stepOne") && (
             <>
-              <NavigatorIllustration />
+              {/* <NavigatorIllustration /> */}
               <br />
               <DialogContentText style={{ paddingLeft: 20 }}>
                 Real World App requires a Bank Account to perform transactions.
@@ -87,7 +87,7 @@ const UserOnboardingContainer: React.FC<Props> = ({ authService, bankAccountsSer
           )}
           {userOnboardingState.matches("stepThree") && (
             <>
-              <PersonalFinance />
+              {/* <PersonalFinance /> */}
               <br />
               <DialogContentText style={{ paddingLeft: 20 }}>
                 You're all set!
